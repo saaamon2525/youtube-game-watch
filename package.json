@@ -1,0 +1,12 @@
+{
+  "name": "youtube-game-watch",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "collect": "node scripts/collect.mjs",
+    "reprocess": "node scripts/reprocess-existing.mjs",
+    "build:pages": "node scripts/build-pages.mjs"
+  }
+}

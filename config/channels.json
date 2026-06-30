@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ホワイト",
+    "url": "https://www.youtube.com/@Whitedayo0126",
+    "handle": "@Whitedayo0126",
+    "enabled": true
+  },
+  {
+    "name": "ピロ",
+    "url": "https://www.youtube.com/@Pirogamesch",
+    "handle": "@Pirogamesch",
+    "enabled": true
+  },
+  {
+    "name": "レトルト",
+    "url": "https://www.youtube.com/@retokani",
+    "handle": "@retokani",
+    "enabled": true
+  },
+  {
+    "name": "けんぼー",
+    "url": "https://www.youtube.com/@kenbo_games",
+    "handle": "@kenbo_games",
+    "enabled": true
+  },
+  {
+    "name": "キヨ",
+    "url": "https://www.youtube.com/@KIYOisGOD",
+    "handle": "@KIYOisGOD",
+    "enabled": true
+  },
+  {
+    "name": "ハヤトの野望",
+    "url": "https://www.youtube.com/@hayayabo",
+    "handle": "@hayayabo",
+    "enabled": true
+  },
+  {
+    "name": "ポッキー",
+    "url": "https://www.youtube.com/@pockysweets",
+    "handle": "@pockysweets",
+    "enabled": true
+  },
+  {
+    "name": "のばまん",
+    "url": "https://www.youtube.com/nobamangames/videos",
+    "customUrl": "nobamangames",
+    "enabled": true
+  }
+]

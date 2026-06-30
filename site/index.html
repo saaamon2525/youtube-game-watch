@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YouTube Game Watch</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">YouTube Game Watch</p>
+        <h1>参考チャンネル動画一覧</h1>
+      </div>
+      <div class="actions">
+        <button id="collectButton" class="primary">収集</button>
+        <button id="settingsButton" class="ghost">APIキー</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="pageTabs" aria-label="ページ切替">
+        <button id="videosPageButton" class="active" type="button">動画一覧</button>
+        <button id="gamesPageButton" type="button">ゲーム一覧</button>
+        <button id="bookmarksPageButton" type="button">予定ゲーム</button>
+      </section>
+
+      <section class="summary" id="summary"></section>
+
+      <section class="filters" aria-label="filters">
+        <input id="searchInput" type="search" placeholder="タイトル・ゲーム名で検索">
+        <select id="channelFilter"></select>
+        <select id="gameFilter"></select>
+        <select id="sortSelect">
+          <option value="publishedAt">投稿日が新しい</option>
+          <option value="excitementScore">盛り上がり度</option>
+          <option value="viewCount">再生数</option>
+          <option value="commentCount">コメント数</option>
+        </select>
+        <label class="check">
+          <input id="unknownOnly" type="checkbox">
+          未分類のみ
+        </label>
+        <div class="viewToggle" aria-label="表示形式">
+          <button id="cardViewButton" class="active" type="button">カード</button>
+          <button id="listViewButton" type="button">リスト</button>
+        </div>
+      </section>
+
+      <section class="status" id="status"></section>
+      <section class="grid" id="videoGrid"></section>
+      <section class="gamesPanel hidden" id="gamesPanel"></section>
+      <section class="gamesPanel hidden" id="bookmarksPanel"></section>
+    </main>
+
+    <dialog id="settingsDialog">
+      <form method="dialog" class="dialogBody">
+        <div class="dialogHead">
+          <h2>APIキー設定</h2>
+          <button value="cancel" class="iconButton" aria-label="閉じる">×</button>
+        </div>
+        <label>
+          YouTube Data APIキー
+          <input id="apiKeyInput" type="password" autocomplete="off" placeholder="AIza...">
+        </label>
+        <label>
+          1チャンネルあたりの取得本数
+          <input id="maxVideosInput" type="number" min="1" max="50" value="25">
+        </label>
+        <p class="hint">APIキーはこのPC内の config/settings.local.json に保存されます。</p>
+        <div class="dialogActions">
+          <button id="saveSettingsButton" value="default" class="primary">保存</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

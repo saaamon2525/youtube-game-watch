@@ -1,0 +1,26 @@
+[
+  {
+    "game": "Minecraft",
+    "aliases": ["minecraft", "マイクラ", "マインクラフト"]
+  },
+  {
+    "game": "Among Us",
+    "aliases": ["among us", "アモングアス", "アモアス"]
+  },
+  {
+    "game": "The Backrooms",
+    "aliases": ["backrooms", "バックルーム"]
+  },
+  {
+    "game": "8番出口",
+    "aliases": ["8番出口", "the exit 8"]
+  },
+  {
+    "game": "Content Warning",
+    "aliases": ["content warning"]
+  },
+  {
+    "game": "Lethal Company",
+    "aliases": ["lethal company"]
+  }
+]
