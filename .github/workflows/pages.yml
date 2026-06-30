@@ -29,7 +29,7 @@ jobs:
 
       - name: Collect YouTube data
         env:
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          COLLECTOR_API_KEY: ${{ secrets.COLLECTOR_API_KEY }}
         run: npm run collect
 
       - name: Commit updated video data
